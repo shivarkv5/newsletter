@@ -62,7 +62,7 @@ app.post("/failure" , function(req,res){
 });
 
 
-app.listen(3000, ()=>console.log("Server established at localhost:3000"));
+app.listen(process.env.PORT ||3000, ()=>console.log("Server established at localhost:3000"));
 
 //3a94b049e82220cff335e9c1006ea8fd-us20  - API KEY
 
